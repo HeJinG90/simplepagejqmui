@@ -1,7 +1,7 @@
 ;(function(){
 	
 	let sub3 = window.href.sub3;
-	alert('进入了子页三');
+	alert('进入了子页四');
 	
 	var page = {
 		init : function(){

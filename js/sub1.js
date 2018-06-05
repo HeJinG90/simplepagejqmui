@@ -47,7 +47,7 @@
 			return times;
 		},
 		//时间转换AM PM
-		transformTime function (time){
+		transformTime : function (time){
 		    	let timeall = time;
 		    	let hour = time.slice(11,13);
 		    	let minute = time.slice(14,16)
