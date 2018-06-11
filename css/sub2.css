@@ -1,15 +1,14 @@
 .imgDiv{
 	position: relative;
-    height: 1.8rem;
     display: inline-block;
 }
 .imgDiv img{
-	width: 3rem;
-    height: 1.8rem;
+	width: 3.7rem;
+    height: 2.2rem;
 }
 .img_input {
-    width: 3rem;
-	height: 1.8rem;
+    width: 3.7rem;
+	height: 2.2rem;
     position: absolute;
     top: 0;
     z-index:1;
@@ -28,7 +27,7 @@
 }
 .video_input{
 	width: 7rem;
-    height: 1.3rem;
+    height: 0.6rem;
     position: absolute;
     top: 0;
     left: 0.1rem;
@@ -43,5 +42,27 @@
 .videoDiv div{
 	border: 1px dashed #d9d9d9;
     text-align: center;
-    color: gainsboro;
+    height: 0.6rem;
+    color: grey;
+}
+.previewWrap{
+	position: absolute;
+    z-index: 999;
+    display: none;
+    width: 375px;
+    height: 667px;
+    top: 3px;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transform: none;
+    transform: none;
+    border-radius: 7px;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.1);
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+.previewWrap.active{
+	display: block;
 }
