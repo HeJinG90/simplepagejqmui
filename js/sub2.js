@@ -197,7 +197,6 @@
             }			
         	}
         	html = headHtml+bodyHtml+foodHtml;
-        	debugger
         	if($(".videoDiv video").attr('src')!=''){
 //      		$(".previewVideo").attr('src',$(".videoDiv video").attr('src'));
 //      		$(".previewVideo").css("display","block");
