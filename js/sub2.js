@@ -55,7 +55,6 @@
 		},
 		showVideo: function(){
 			$(".video_input").off('change').on('change',function(event){
-				var video = document.getElementById('vidoe');
 				let file = this.files[0];
 				let _this = this;
 				if(!/video/g.test(file.type))           //判断获取的是否为视频文件  
@@ -207,6 +206,7 @@
         	page.data.textarea=$("#textareainput").val();
         	}
         	$('.previewWrap').html(html);
+        	debugger
 		    mui('.mui-slider').slider();
         	$(".mui-slider-group").css('transform','translate3d(-375px, 0px, 0px) translateZ(0px)');
         },
