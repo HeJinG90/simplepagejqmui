@@ -3,11 +3,11 @@
     display: inline-block;
 }
 .imgDiv img{
-	width: 1.8rem;
+	width: 1.77rem;
     height: 1.1rem;
 }
 .img_input {
-    width: 1.8rem;
+    width: 1.77rem;
     height: 1.1rem;
     position: absolute;
     top: 0;
@@ -23,7 +23,12 @@
 	position: relative;
 }
 .videoDiv video{
-    width: 7.7rem;
+    width: 4rem;
+    margin-left: 1.9rem;
+}
+.videoDiv span{
+    line-height: 0.6rem;
+    display: inline-block;
 }
 .video_input{
 	width: 7.7rem;

@@ -1,9 +1,9 @@
 ;(function(){
 	
 	
-//	let sub1 = window.href.sub1;
-//	let sub3 = window.href.sub3;
-//	alert('进入了子页二');
+	let sub1 = window.href.sub1;
+	let sub3 = window.href.sub3;
+	alert('进入了子页二');
 	
 	var page = {
 		data:{
@@ -12,26 +12,26 @@
 			textarea:''
 		},
 		init : function(){
-//			page.bindButton();
-//			page.back();
+			page.bindButton();
+			page.back();
 			page.showImg();
 			page.showVideo();
 			page.previewFun();
 			page.submitFun();
 		},
-//		bindButton : function(){
-//			$("#gotosub1").off('click').on('click',function(){
-//				common.router(sub1);
-//			});
-//			$("#gotosub3").off('click').on('click',function(){
-//				common.router(sub3);
-//			});
-//		},
-//		back : function(){
-//			$(".back").off('click').on('click',function(){
-//				common.router(sub1);
-//			});
-//		},
+		bindButton : function(){
+			$("#gotosub1").off('click').on('click',function(){
+				common.router(sub1);
+			});
+			$("#gotosub3").off('click').on('click',function(){
+				common.router(sub3);
+			});
+		},
+		back : function(){
+			$(".back").off('click').on('click',function(){
+				common.router(sub1);
+			});
+		},
 		
 		showImg: function(){
 			$(".img_input").off('change').on('change',function(event){
@@ -55,7 +55,6 @@
 		},
 		showVideo: function(){
 			$(".video_input").off('change').on('change',function(event){
-				var video = document.getElementById('vidoe');
 				let file = this.files[0];
 				let _this = this;
 				if(!/video/g.test(file.type))           //判断获取的是否为视频文件  
@@ -207,6 +206,7 @@
         	page.data.textarea=$("#textareainput").val();
         	}
         	$('.previewWrap').html(html);
+        	debugger
 		    mui('.mui-slider').slider();
         	$(".mui-slider-group").css('transform','translate3d(-375px, 0px, 0px) translateZ(0px)');
         },

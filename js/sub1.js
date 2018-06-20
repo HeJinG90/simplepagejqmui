@@ -13,7 +13,7 @@
 				common.router(sub2);
 			});
 		},
-		//截取url上参数  var queryUrl = queryURLParameter(url); 使用方法
+		//截取url上参数  var queryUrl = queryURLParameter(url); 使用方法 let url = window.location.href;
 		queryURLParameter :function (url) {
 			url = url.replace(/\*/g,"&");
 			var reg = /([^?&=]+)=([^?&=]+)/g, obj = {};
